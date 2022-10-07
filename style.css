@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.day {
+    height: 623px;
+    width: 1365px;
+    background: url(image/Pemandangan.svg);
+    overflow-y: hidden;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.surface {
+    height: 300px;
+    width: 400%;
+    background: url(image/Jalan.svg);
+    display: block;
+    position: absolute;
+    margin: 21rem auto;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 10s linear infinite;
+}
+
+.scooter {
+    position: absolute;
+    bottom: 2%;
+    left: 24%;
+    animation: suspension 1s linear infinite;
+}
+
+/* animation */
+
+@keyframes moveRight {
+    100% {
+        transform: translateX(-2950px);
+    }
+}
+
+@keyframes suspension {
+    100% {
+        transform: translateY(-1px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+    0% {
+        transform: translateY(-1px);
+    }
+}
